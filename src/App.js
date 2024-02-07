@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import Announcement from "./components/Announcement";
+import Button from "./components/Button";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Layout from "./components/Layout";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Announcement />
+
+      <Home />
+
+      <Button onClick={() => alert('Hello, world!')} style={{
+        background: "var(--white-secondary)",
+        color: "black",
+      }}>
+        Click me!
+      </Button>
+
+      <Button onClick={() => alert('Hello, world!')} style={{
+        background: "transparent",
+        color: "var(--white-secondary)",
+        border: "1px solid var(--white-secondary)",
+      }}>
+        Click me!
+      </Button>
+
+
+      <Button onClick={() => alert('Hello, world!')} style={{
+        background: "transparent",
+        color: "black",
+        border: "1px solid black",
+      }}>
+        Click me!
+      </Button>
+    </>
+
   );
 }
 
