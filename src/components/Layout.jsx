@@ -12,8 +12,10 @@ const Layout = ({ children }) => {
             <div style={{
                 margin: "0 auto",
                 maxWidth: screenWidth > 768 ? "1440px" : "375px",
-                padding: "0 20px",
+                padding: screenWidth > 768 ? "0 120px" : "0 20px",
                 border: "1px solid red",
+                background: 'transparent',
+                overflow: "hidden",
 
             }}>
                 {children}

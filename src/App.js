@@ -1,8 +1,6 @@
 import Announcement from "./components/Announcement";
-import Button from "./components/Button";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Layout from "./components/Layout";
+import Home from "./sections/Home";
+import About from "./sections/About";
 
 
 function App() {
@@ -10,8 +8,9 @@ function App() {
     <>
       <Announcement />
       <Home />
+      <About />
 
-      <Button onClick={() => alert('Hello, world!')} style={{
+      {/* <Button onClick={() => alert('Hello, world!')} style={{
         background: "var(--white-secondary)",
         color: "black",
       }}>
@@ -33,7 +32,7 @@ function App() {
         border: "1px solid black",
       }}>
         Click me!
-      </Button>
+      </Button> */}
     </>
 
   );

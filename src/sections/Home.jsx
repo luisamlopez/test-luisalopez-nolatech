@@ -1,9 +1,9 @@
-import Header from "./Header";
-import Layout from "./Layout";
+import Header from "../components/Header";
+import Layout from "../components/Layout";
 import background from "../assets/Prb_Header.png";
 import { useState } from "react";
-import Button from "./Button";
-import Timer from "./Timer";
+import Button from "../components/Button";
+import Timer from "../components/Timer";
 
 const Home = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -19,7 +19,6 @@ const Home = () => {
                 height: "90vh",
                 display: "flex",
                 flexDirection: "column",
-                width: "100%",
 
             }}>
                 {/* Backdrop */}
