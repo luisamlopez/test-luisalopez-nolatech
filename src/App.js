@@ -9,7 +9,6 @@ function App() {
   return (
     <>
       <Announcement />
-
       <Home />
 
       <Button onClick={() => alert('Hello, world!')} style={{

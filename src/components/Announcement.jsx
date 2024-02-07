@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { CiStreamOn } from "react-icons/ci";
 import { FaRegCirclePlay } from "react-icons/fa6";
 
 
 const Announcement = () => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    window.addEventListener("resize", () => {
+        setScreenWidth(window.innerWidth);
+    });
     return (
         <div style={{
             background: "var(--green-primary)",

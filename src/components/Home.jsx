@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import background from "../assets/Prb_Header.png";
 import { useState } from "react";
 import Button from "./Button";
+import Timer from "./Timer";
 
 const Home = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -32,13 +33,15 @@ const Home = () => {
                     <Header />
                     <div
                         style={{
-                            fontSize: "2.5rem",
+                            fontSize: screenWidth > 768 ? "2.5rem" : "1.5rem",
                             fontWeight: "bold",
                             color: "var(--white-secondary)",
                             width: "fit-content",
                             margin: "0 auto",
-                            marginLeft: "40%",
-                            marginTop: "5%",
+                            marginLeft: screenWidth > 768 ? "40%" : "0",
+                            marginTop: screenWidth > 768 ? "5%" : "40%",
+                            padding: screenWidth > 768 ? "0" : "20px",
+
 
                         }}
                     >
@@ -51,8 +54,8 @@ const Home = () => {
                         <Button style={{
                             background: "var(--green-primary)",
                             color: "var(--white-secondary)",
-                            fontSize: "1.5rem",
-                            marginTop: "100px",
+                            fontSize: screenWidth > 768 ? "1.5rem" : "1rem",
+                            marginTop: screenWidth > 768 ? "100px" : "20px",
                         }}>
                             WHAT IS NEXT
                         </Button>
@@ -63,7 +66,7 @@ const Home = () => {
 
             </div>
 
-
+            <Timer />
 
 
         </>

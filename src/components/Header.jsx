@@ -36,13 +36,14 @@ const Header = () => {
                 <img src={iconGrab} alt="Grab Logo" width={screenWidth > 768 ? 150 : 80} style={{
                 }} />
                 <nav style={{
-                    display: "flex",
+                    display: screenWidth > 768 ? "flex" : "none",
                     justifyContent: "space-between",
                     alignItems: "center",
                     gap: "10px",
                     width: "100%",
                     marginLeft: screenWidth > 768 ? "28%" : "0",
                     padding: screenWidth > 768 ? "20px 0" : "0",
+                    flexDirection: screenWidth > 768 ? "row" : "column",
                 }}>
                     <a href="/">LOREM IPSUM</a>
                     <a href="/">LOREM IPSUM</a>
