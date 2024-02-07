@@ -53,6 +53,7 @@ const Home = () => {
                         <Button style={{
                             background: "var(--green-primary)",
                             color: "var(--white-secondary)",
+                            fontWeight: "bold",
                             fontSize: screenWidth > 768 ? "1.5rem" : "1rem",
                             marginTop: screenWidth > 768 ? "100px" : "20px",
                         }}>
