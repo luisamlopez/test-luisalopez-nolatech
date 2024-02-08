@@ -2,6 +2,8 @@ import Announcement from "./components/Announcement";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Services from "./sections/Services";
+import CTA2 from "./sections/CTA2";
+import Timer from "./components/Timer";
 
 
 function App() {
@@ -9,26 +11,12 @@ function App() {
     <>
       <Announcement />
       <Home />
+      <Timer />
       <About />
       <Services />
-
-      {/* <Button onClick={() => alert('Hello, world!')} style={{
-        background: "var(--white-secondary)",
-        color: "black",
-      }}>
-        Click me!
-      </Button>
-
-      <Button onClick={() => alert('Hello, world!')} style={{
-        background: "transparent",
-        color: "var(--white-secondary)",
-        border: "1px solid var(--white-secondary)",
-      }}>
-        Click me!
-      </Button>
+      <CTA2 />
 
 
-    */}
     </>
 
   );

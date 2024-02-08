@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Layout from "./Layout";
 
 const Timer = () => {
 
@@ -36,50 +37,53 @@ const Timer = () => {
 
 
 
-    return <div
-        style={{
-            background: "#025923",
-            color: "var(--white-secondary)",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexDirection: screenWidth > 768 ? "row" : "column",
-            gap: "10px",
-            padding: "10px 30px",
-        }}
-    >
-        <h3 style={{
-            fontSize: "1.5rem",
-            fontWeight: "bold",
-            margin: 0,
-            width: screenWidth > 768 ? "20%" : "100%",
-            textAlign: screenWidth > 768 ? "left" : "center",
-        }}
-        >Lorem ipsum dolor sit amet, consectetur</h3>
-
+    return (<Layout background="#025923" >
         <div
             style={{
+                color: "var(--white-secondary)",
                 display: "flex",
-                justifyContent: "center",
+                justifyContent: "space-between",
                 alignItems: "center",
-                flexDirection: "row",
-                gap: screenWidth > 768 ? "50px" : "10px",
-                width: screenWidth > 768 ? "70%" : "100%",
-
+                flexDirection: screenWidth > 768 ? "row" : "column",
+                gap: "10px",
+                padding: "10px 0px",
             }}
         >
+            <h3 style={{
+                fontSize: "1.5rem",
+                fontWeight: "bold",
+                margin: 0,
+                width: screenWidth > 768 ? "20%" : "100%",
+                textAlign: screenWidth > 768 ? "left" : "center",
+            }}
+            >Lorem ipsum dolor sit amet, consectetur</h3>
 
-            <Container measure={"days"} time={days} />
-            <Divider />
-            <Container measure={"hours"} time={hours} />
-            <Divider />
-            <Container measure={"minutes"} time={minutes} />
-            <Divider />
-            <Container measure={"seconds"} time={seconds} />
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    flexDirection: "row",
+                    gap: screenWidth > 768 ? "50px" : "10px",
+                    width: screenWidth > 768 ? "70%" : "100%",
+
+                }}
+            >
+
+                <Container measure={"days"} time={days} />
+                <Divider />
+                <Container measure={"hours"} time={hours} />
+                <Divider />
+                <Container measure={"minutes"} time={minutes} />
+                <Divider />
+                <Container measure={"seconds"} time={seconds} />
+            </div>
+
+
         </div>
+    </Layout>)
 
 
-    </div>;
 }
 
 export default Timer;

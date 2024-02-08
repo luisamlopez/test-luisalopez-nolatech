@@ -9,6 +9,7 @@ const Card = ({ title, image }) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            cursor: "pointer",
 
         }} >
             <img src={image} alt={title} style={{

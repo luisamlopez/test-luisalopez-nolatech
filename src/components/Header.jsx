@@ -41,7 +41,7 @@ const Header = () => {
                     alignItems: "center",
                     gap: "10px",
                     width: "100%",
-                    marginLeft: screenWidth > 768 ? "28%" : "0",
+                    marginLeft: screenWidth > 768 ? "26%" : "0",
                     padding: screenWidth > 768 ? "20px 0" : "0",
                     flexDirection: screenWidth > 768 ? "row" : "column",
                 }}>

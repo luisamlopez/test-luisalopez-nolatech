@@ -15,7 +15,7 @@ const Services = () => {
     });
 
     return (
-        <Layout>
+        <Layout background="#F5F6FA">
             <div style={{
                 display: "flex",
                 flexDirection: "column",
