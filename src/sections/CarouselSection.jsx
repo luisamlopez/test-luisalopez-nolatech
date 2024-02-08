@@ -7,6 +7,7 @@ import pic9 from "../assets/Pic9.png";
 import pic10 from "../assets/Pic10.png";
 import Button from "../components/Button";
 
+// Carousel images
 const images = [pic7, pic8, pic9, pic10];
 
 

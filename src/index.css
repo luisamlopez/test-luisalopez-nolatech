@@ -1,8 +1,10 @@
+/* Define variables for primary and secondary colors */
 :root {
-  --green-primary: #03b044;
-  --white-secondary: #ffffff;
+  --green-primary: #03b044; /* Primary color */
+  --white-secondary: #ffffff; /* Secondary color */
 }
 
+/* Apply global styles to the body */
 body {
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
@@ -10,6 +12,7 @@ body {
   font-size: 16px;
 }
 
+/* Global styles for buttons */
 button {
   padding: 10px 20px;
   font-size: 16px;
@@ -19,25 +22,26 @@ button {
   cursor: pointer;
 }
 
+/* Hover effect for buttons */
 button:hover {
   opacity: 0.8;
 }
 
+/* Remove default list styles */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
+/* Global styles for links */
 a {
   text-decoration: none;
   color: var(--white-secondary);
   font-weight: 600;
 }
 
-header {
-  background: transparent;
-}
-
+/* Reset margin for heading elements */
 h1,
 h2,
 h3,
@@ -47,10 +51,12 @@ h6 {
   margin: 0;
 }
 
+/* Global styles for paragraphs */
 p {
   font-weight: 500;
 }
 
+/* Global styles for input and textarea */
 input,
 textarea {
   border-radius: 4px;
@@ -63,17 +69,13 @@ textarea {
   font-family: "Roboto", sans-serif;
 }
 
+/* Adjust height for textarea */
 textarea {
   height: 150px;
 }
 
+/* Styling for input and textarea placeholders */
 input::placeholder,
 textarea::placeholder {
   color: #ababab;
-}
-
-@media (max-width > 768px) {
-  a {
-    color: var(--green-primary);
-  }
 }

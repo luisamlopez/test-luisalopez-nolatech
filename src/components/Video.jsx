@@ -39,4 +39,5 @@ const Video = ({ image, title }) => {
     )
 }
 
+/**Export video card component */
 export default Video;

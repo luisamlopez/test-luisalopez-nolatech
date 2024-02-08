@@ -9,6 +9,7 @@ import Contact from "./sections/ContactUs";
 import Mobile from "./sections/Mobile";
 import CarouselSection from "./sections/CarouselSection";
 import Footer from "./components/Footer";
+import SocialMedia from "./components/SocialMedia";
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
       <Mobile />
       <CarouselSection />
       <Footer />
-
+      <SocialMedia />
     </>
 
   );
