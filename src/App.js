@@ -4,6 +4,7 @@ import About from "./sections/About";
 import Services from "./sections/Services";
 import CTA2 from "./sections/CTA2";
 import Timer from "./components/Timer";
+import Videos from "./sections/Videos";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Services />
       <CTA2 />
+      <Videos />
 
 
     </>
