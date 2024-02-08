@@ -12,7 +12,7 @@ const CTA2 = () => {
 
     return (
         <Layout
-            background="#03B044" >
+            backgroundColor="#03B044" >
             <div style={{
                 display: "flex",
                 flexDirection: screenWidth > 768 ? "row" : "column",
@@ -44,7 +44,7 @@ const CTA2 = () => {
                             background: "var(--white-secondary)",
                             color: "black",
                             fontWeight: "bold",
-                            fontSize: screenWidth > 768 ? "1.2rem" : "1rem",
+                            fontSize: "1rem",
                             height: "60px",
                         }}>
                             LOREM IPSUM DOLOR SIT
@@ -55,7 +55,7 @@ const CTA2 = () => {
                             color: "var(--white-secondary)",
                             border: "1px solid var(--white-secondary)",
                             fontWeight: "bold",
-                            fontSize: screenWidth > 768 ? "1.2rem" : "1rem",
+                            fontSize: "1rem",
                             height: "60px",
 
                         }}>

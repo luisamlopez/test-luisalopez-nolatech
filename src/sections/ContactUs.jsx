@@ -25,7 +25,7 @@ const Contact = () => {
     }
 
     return (
-        <Layout background={screenWidth > 768 ? `url(${joinUs}) no-repeat center center` : 'var(--green-primary)'} height={screenWidth > 768 ? "110vh" : "auto"}>
+        <Layout backgroundColor="var(--green-primary)" backgroundImage={screenWidth > 768 ? `url(${joinUs})` : 'none'} height={screenWidth > 768 ? "110vh" : "auto"}>
 
             <div
                 style={{

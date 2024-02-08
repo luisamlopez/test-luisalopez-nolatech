@@ -17,7 +17,7 @@ const CarouselSection = () => {
         setScreenWidth(window.innerWidth);
     });
     return (
-        <Layout background="#006749">
+        <Layout backgroundColor="#006749">
             <div style={{
                 display: "flex",
                 flexDirection: "column",
@@ -25,7 +25,7 @@ const CarouselSection = () => {
                 justifyContent: "center",
                 padding: screenWidth > 768 ? "40px 20px" : "0",
                 textAlign: "center",
-                margin: "50px 0",
+                margin: "20px 0",
             }}>
 
                 <div style={{
@@ -50,7 +50,7 @@ const CarouselSection = () => {
                     fontWeight: "bold",
                     fontSize: screenWidth > 768 ? "1.2rem" : "1rem",
                     height: "60px",
-                    marginTop: "40px",
+                    marginTop: "20px",
                     width: screenWidth > 768 ? "250px" : "100%",
                 }}>
                     VIEW ALL

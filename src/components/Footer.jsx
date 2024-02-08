@@ -8,7 +8,7 @@ const Footer = () => {
         setScreenWidth(window.innerWidth);
     });
     return (
-        <Layout background="#F5F6FA">
+        <Layout backgroundColor="#F5F6FA">
             <footer
                 style={{
                     display: "flex",

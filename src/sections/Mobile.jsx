@@ -9,7 +9,7 @@ const Mobile = () => {
         setScreenWidth(window.innerWidth);
     });
     return (
-        <Layout background={screenWidth > 768 ? `url(${background}) no-repeat center center` : 'var(--white-secondary)'} height={screenWidth > 768 ? "100vh" : "auto"}>
+        <Layout backgroundColor={screenWidth > 768 ? "rgba(0,0,0,0.3)" : 'var(--white-secondary)'} backgroundImage={screenWidth > 768 ? `url(${background})` : "none"} height={screenWidth > 768 ? "100vh" : "auto"}>
             <div>
                 <h3 style={{
                     fontSize: "2.5rem",

@@ -9,7 +9,7 @@ import Layout from "./Layout";
 const Announcement = () => {
     /* Return JSX */
     return (
-        <Layout background="var(--green-primary)">
+        <Layout backgroundColor="var(--green-primary)">
             <div style={{
                 width: "100%",
                 display: "flex",

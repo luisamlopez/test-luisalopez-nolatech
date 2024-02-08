@@ -15,7 +15,7 @@ const Services = () => {
     });
 
     return (
-        <Layout background="#F5F6FA">
+        <Layout backgroundColor="#F5F6FA">
             <div style={{
                 display: "flex",
                 flexDirection: "column",
@@ -23,7 +23,7 @@ const Services = () => {
                 justifyContent: "center",
                 padding: screenWidth > 768 ? "40px 20px" : "0",
                 textAlign: "center",
-                margin: "50px 0",
+                margin: "20px 0",
             }}>
 
                 <div style={{
@@ -34,7 +34,7 @@ const Services = () => {
                         fontWeight: "bolder",
                         marginBottom: "20px",
                         width: "100%",
-                        margin: "40px 0",
+                        margin: "20px 0",
                     }}>
                         Lorem ipsum
                     </h3>
@@ -54,9 +54,9 @@ const Services = () => {
                     flexDirection: screenWidth > 768 ? "row" : "column",
                     alignItems: "center",
                     justifyContent: "center",
-                    padding: screenWidth > 768 ? "30px 20px" : "20px",
+                    padding: "20px",
                     textAlign: "center",
-                    margin: screenWidth > 768 ? "40px 0" : "20px",
+                    margin: screenWidth > 768 ? "5px 0" : "20px",
                     gap: "20px",
                 }}>
 

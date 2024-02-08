@@ -49,7 +49,7 @@ const Timer = () => {
 
     // Return JSX
     return (
-        <Layout background="#025923">
+        <Layout backgroundColor="#025923">
             <div style={{
                 color: "var(--white-secondary)",
                 display: "flex",

@@ -11,7 +11,7 @@ const Videos = () => {
     });
 
     return (
-        <Layout background="#F8F8FB">
+        <Layout backgroundColor="#F8F8FB">
             <div style={{
                 display: "flex",
                 flexDirection: "column",

@@ -12,10 +12,13 @@ const Layout = ({ children, ...props }) => {
                 margin: "0 auto",
                 maxWidth: screenWidth > 768 ? "1440px" : "375px",
                 padding: screenWidth > 768 ? "0 120px" : "0 20px",
-                background: props.background ? props.background : "transparent",
+                backgroundImage: props.backgroundImage ? props.backgroundImage : "transparent",
                 overflow: "hidden",
                 backgroundSize: "cover",
                 height: props.height ? props.height : "auto",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundColor: props.backgroundColor ? props.backgroundColor : "transparent",
 
 
             }}>

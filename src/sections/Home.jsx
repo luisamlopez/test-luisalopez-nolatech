@@ -13,7 +13,7 @@ const Home = () => {
     return (
 
 
-        <Layout background={`url(${background}) no-repeat center center`} height="85vh" >
+        <Layout backgroundImage={`url(${background})`} height="90vh" >
 
             <Header />
             <div
