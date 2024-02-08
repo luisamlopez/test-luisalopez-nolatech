@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import background from "../assets/Prb_Header.png";
 import { useState } from "react";
 import Button from "../components/Button";
-import Timer from "../components/Timer";
 
 const Home = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);

@@ -19,6 +19,11 @@ const Contact = () => {
         alignItems: "center",
     }
 
+    const onSubmit = (e) => {
+        e.preventDefault();
+        alert("Form submitted")
+    }
+
     return (
         <Layout background={screenWidth > 768 ? `url(${joinUs}) no-repeat center center` : 'var(--green-primary)'} height={screenWidth > 768 ? "110vh" : "auto"}>
 
@@ -50,12 +55,14 @@ const Contact = () => {
                     color: "var(--white-secondary)",
                     fontSize: "1.5rem",
                 }}>Lorem ipsum dolor sit, amet consectetur</p>
-                <form
+                <form onSubmit={onSubmit}
+                    method="POST"
                     style={{
                         display: "flex",
                         flexDirection: "column",
                         gap: "20px",
-                        width: "100%"
+                        width: "100%",
+                        marginBottom: "40px",
                     }}
                 >
                     <div style={style}>
@@ -79,7 +86,8 @@ const Contact = () => {
                         color: screenWidth > 768 ? "var(--white-secondary)" : "var(--green-primary)",
                         fontWeight: "bolder",
                         width: screenWidth > 768 ? "50%" : "100%",
-                    }}>
+                        marginButton: "20px",
+                    }} onClick={onSubmit}>
                         I'M IN
                     </Button>
                 </form>
