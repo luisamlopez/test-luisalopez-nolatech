@@ -5,6 +5,7 @@ import Services from "./sections/Services";
 import CTA2 from "./sections/CTA2";
 import Timer from "./components/Timer";
 import Videos from "./sections/Videos";
+import Contact from "./sections/ContactUs";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Services />
       <CTA2 />
       <Videos />
+      <Contact />
 
 
     </>

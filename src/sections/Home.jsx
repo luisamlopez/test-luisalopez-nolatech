@@ -14,7 +14,7 @@ const Home = () => {
     return (
 
 
-        <Layout background={`url(${background}) no-repeat center center`} height="90vh" >
+        <Layout background={`url(${background}) no-repeat center center`} height="85vh" >
 
             <Header />
             <div

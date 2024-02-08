@@ -56,9 +56,8 @@ const Videos = () => {
 
 
                 <Button style={{
-                    background: "transparent",
-                    color: "black",
-                    border: "1px solid black",
+                    background: "var(--green-primary)",
+                    color: "var(--white-secondary)",
                     fontWeight: "bolder",
                     padding: "20px 40px",
                     fontSize: screenWidth > 768 ? "1.5rem" : "1rem",
